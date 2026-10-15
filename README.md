@@ -1,38 +1,43 @@
-# frontend-internship-dashboard
+# 前端实习任务看板
 
-This template should help get you started developing with Vue 3 in Vite.
+一个使用 Vue 3 构建的本地任务管理应用，帮助求职者记录前端学习和实习投递任务。
 
-## Recommended IDE Setup
+## 功能
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 新增、完成和删除任务
+- 查看全部、未完成或已完成任务
+- 自动统计任务完成进度
+- 使用 localStorage 保存任务，刷新页面后数据仍保留
+- 使用 Vue 组件拆分任务列表，父子组件通过 props 与 emits 通信
 
-## Recommended Browser Setup
+## 技术栈
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Vue 3
+- Vite
+- JavaScript
+- CSS
+- localStorage
 
-## Customize configuration
+## 本地运行
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+在浏览器打开终端显示的本地地址。
 
-```sh
-npm run build
+## 项目结构
+
+```text
+src/
+├── App.vue                 # 数据、筛选和页面主结构
+└── components/
+    └── TaskList.vue        # 任务列表展示与交互事件
 ```
+
+## 后续计划
+
+- 支持任务优先级和截止日期
+- 适配更小的手机屏幕
+- 部署在线演示地址
